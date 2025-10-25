@@ -50,7 +50,7 @@ The application ensures secure authentication, dynamic portfolio previews, image
 To run this project locally, follow these steps:
 
 Clone the repository:
-  git clone https://github.com/your-username/resume-builder.git
+  git clone https://github.com/your-username/portfolio-builder.git
   Install dependencies for both frontend and backend:
 
 cd client
