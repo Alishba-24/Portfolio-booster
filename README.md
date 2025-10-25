@@ -1,7 +1,8 @@
 # 📂 Portfolio Builder App
 
-The **Portfolio Builder App** is a full-stack web application designed to help users—particularly students, freelancers, and job seekers—create and manage professional portfolios with ease. Users can securely register, add personal and project details, and choose from pre-designed responsive templates to generate a live portfolio website.
+Portfolio Builder App is a full-stack web application that helps users—students, freelancers, and job seekers—create and manage professional portfolios easily. Users can securely register, add personal and project details, and choose from pre-designed responsive templates to generate a live portfolio website.
 
+The application ensures secure authentication, dynamic portfolio previews, image uploads, and a fully responsive design across devices. Data is stored in MongoDB Atlas, and files are managed securely through the backend.
 ---
 
 ## ✨ Features
@@ -25,10 +26,6 @@ The **Portfolio Builder App** is a full-stack web application designed to help u
 - Mobile-first UI.
 - Optimized for desktop, tablet, and mobile devices.
 
-### 📊 Admin Dashboard
-- Manage all users and their portfolios.
-- Monitor platform activities.
-
 ---
 
 ## 🛠 Tech Stack
@@ -49,58 +46,31 @@ The **Portfolio Builder App** is a full-stack web application designed to help u
 
 ---
 
-## 📂 Folder Structure
+## Installation
+To run this project locally, follow these steps:
 
-portfolio-builder-app/
-│
-├── backend/
-│ ├── src/
-│ │ ├── config/ # Database and server configuration
-│ │ ├── controllers/ # Request handlers
-│ │ ├── middleware/ # Authentication and error handling
-│ │ ├── models/ # Mongoose schemas
-│ │ ├── routes/ # API endpoints
-│ │ └── index.ts # App entry point
-│
-├── frontend/
-│ ├── src/
-│ │ ├── assets/ # Static assets
-│ │ ├── components/ # Reusable UI components
-│ │ ├── context/ # Context API providers
-│ │ ├── hooks/ # Custom hooks
-│ │ ├── pages/ # Application pages
-│ │ └── main.tsx # Entry point
+Clone the repository:
+  git clone https://github.com/your-username/resume-builder.git
+  Install dependencies for both frontend and backend:
 
----
-
-## ⚙ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/<your-username>/portfolio-builder-app.git
-2️⃣ Backend Setup
-cd server
-npm install
-Create a .env file inside the backend directory:
-PORT=5000
-MONGO_URI=<your-mongodb-uri>
-JWT_SECRET=<your-jwt-secret>
-UPLOAD_PATH=uploads/
-Run the backend:
-npm run dev
-3️⃣ Frontend Setup
 cd client
 npm install
-Create a .env file inside the frontend directory:
-VITE_API_URL=http://localhost:5000/api
-Run the frontend:
-npm run dev
+cd ../server
+npm install
 
-Deployment
-You can deploy this app on:
-Frontend → Vercel / Netlify
-Backend → Render / Railway / Heroku
-Database → MongoDB Atlas
+Set up environment variables:
 
-📜 License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project as long as the original license is included.
+Create a .env file in the backend directory.
+Add your MongoDB connection URI, JWT secret, and any other necessary variables.
+
+Start the development servers:
+## Start backend server (runs on http://localhost:5000)
+cd server
+npm start
+
+## Start frontend development server (runs on http://localhost:5173)
+cd client
+npm start
+Open your browser and navigate to http://localhost:3000 to view the application.
+
+
