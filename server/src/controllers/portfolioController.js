@@ -1,6 +1,6 @@
 import { Response } from 'express';
 import { Portfolio } from '../models/Portfolio';
-import { AuthenticatedRequest } from '../types/express';
+import { AuthenticatedRequest } from '../types/express.d';
 
 export const createPortfolio = async (req: AuthenticatedRequest, res: Response) => {
   try {
